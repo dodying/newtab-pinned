@@ -1,5 +1,5 @@
 browser.tabs.onCreated.addListener(info => {
-  browser.tabs.update(info.tabId, { pinned: true })
+  browser.tabs.update(info.id, { pinned: true })
 })
 
 browser.browserAction.setTitle({
